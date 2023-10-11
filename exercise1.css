@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+
+}
+p{
+    color: maroon;
+    font-family: 'Times New Roman';
+}
+b,i {
+    color: red;
+}
+* {
+    margin: 2%;
+}
+h2 {
+    background-color: chocolate;
+}
+/* h2 {
+ background-color: chocolate;
+}
+h1 {
+    text-align: center;
+    background-color: orangered
+}
+p {
+    color: Maroon
+*/
+
+
