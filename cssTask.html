@@ -11,8 +11,10 @@
 <body>
     <header>
         <h2>I am the <span>main heading</span> and there should only be one of me </h1>
+<!-- <nav class = "nav"> would create it in a class -->
+            <nav class="nav">
 
-            <nav>
+                <!-- a is an anchor tag -->
                 <a href='#'>Can</a>
                 <a href='#'>You</a>
                 <a href='#'>Smell</a>
@@ -79,22 +81,26 @@
         <p>Hover <i>over</i> me</p>
         <h3>I wonder why this text is in the middle</h3>
     </div>
-    <aside>
+    <!-- Parent -->
+    <aside>  
+        <!-- child -->
         <p>This is a <i>child</i> element of the aside <i>element</i></p>
-        
+        <!-- descendant -->
         <article>
             <h5>This is a h5 element inside of an article element</h5>
             <p>However this is not a child of the aside tag but it is a descendant</p>
         </article>
         <p>I am also <i>paragraph</i> tag who is a <i>child</i> of the aside element</p>
     </aside>
+    <!-- adjacent means next too, that is why only the first button will be styled and not the second -->
+    <button class="firstBtn">I do understand</button>
+    <button class="secondBtn">I do not understand</button> 
+
     <div class="paragraph">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores explicabo architecto id.
         Ratione asperiores eum ab vel, rerum minus quibusdam esse modi blanditiis quas voluptas architecto, ut
         cupiditate expedita quis.</p>
     </div>
-    <button class="firstBtn">I do understand</button>
-    <button class="secondBtn">I do not understand</button>
     <br><br>
     <hr>
     <footer>

@@ -1,28 +1,34 @@
-.table {
+.table,tr , th, td {
     border: 2px solid burlywood;
-    margin: 0 auto;
+    margin: 0 auto; /*to center*/
   }
+
+  /*This is a descendant selector*/
   header h2 {
     color: navy;
   }
   .nav a {
-    text-decoration: none;
-    padding: 1rem;
+    text-decoration: none; /*to remove the underline */
+    padding: 1rem; /*google css units to find out what rem stands for*/
     color: aliceblue;
+  
   }
   nav {
-    background-color: black;
+    background-color: black; /*one line */
     text-align: center;
   }
+  /*id selector */
   #main {
     margin: 30px;
     text-align: center;
   }
-  aside > * {
-    border: 10px dotted dimgrey;
+  aside > * { /* > to declare what we want*/
+    border: 10px dotted dimgrey; /*when using a border the color doesnt matter*/
     color: dimgrey;
   }
-  aside + button {
+  /* siblings - they are either not in a container at all or are in the same container */
+  /* this is called an adjacent sibling */
+  aside + button { 
     color: cornflowerblue;
   }
   p ~ article {
