@@ -1,0 +1,71 @@
+.table {
+    border: 2px solid burlywood;
+    margin: 0 auto;
+  }
+  header h2 {
+    color: navy;
+  }
+  .nav a {
+    text-decoration: none;
+    padding: 1rem;
+    color: aliceblue;
+  }
+  nav {
+    background-color: black;
+    text-align: center;
+  }
+  #main {
+    margin: 30px;
+    text-align: center;
+  }
+  aside > * {
+    border: 10px dotted dimgrey;
+    color: dimgrey;
+  }
+  aside + button {
+    color: cornflowerblue;
+  }
+  p ~ article {
+    background-color: lightgray;
+  }
+  * {
+    font-family: verdana;
+    font-weight: 800;
+  }
+  #hover:hover::after {
+    content: 'Hidden H3';
+    background-color: yellow;
+    padding: 2rem;
+  }
+  a:active {
+    color: purple;
+  }
+  tr:first-child {
+    background-color: yellowgreen;
+  }
+  tr:hover td:first-child {
+    color: crimson;
+  }
+  p > i:first-of-type {
+    color: blue;
+  }
+  p > i {
+    color: peru;
+  }
+  ::selection {
+    background-color: greenyellow;
+  }
+  .paragraph::first-line {
+    color: red;
+  }
+  .paragraph::first-letter {
+    color: blue;
+  }
+  main::before {
+    content: url(https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif);
+    display: block;
+  }
+  main::after {
+    content: url(https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif);
+    display: block;
+  }
