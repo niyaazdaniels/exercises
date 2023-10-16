@@ -1,3 +1,10 @@
+:root {
+    --backgroundColor: rgba(0, 0, 255, 0.3);
+    --newColor: rgb(251, 194, 118);
+    --oldColor: #a0a0a0;
+    --someColor: hsl(39, 100%, 50%)
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,50 +18,64 @@ h1, h2, h3 {
 }
 h1:hover {
     color: black;
-    
 }
 nav {
     text-align: center;
-    background-color: grey;
-    word-spacing: 30px;
-    font-size: 20px;
+    background:linear-gradient(grey, silver);
+    word-spacing: 40px;
+    font-size: 18px;
+    font-weight: bold;
 }
 nav a {
     text-decoration: none;
     display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: oldlace;
+    letter-spacing: 10px;
+    border-bottom: 4px solid transparent ;
+   
 }
 nav a:hover {
     color: black;
-    border-bottom: 2px solid blue;
+    border-bottom: 4px solid var(--someColor);
     border-radius: 5px;
-    background-color: white;
+    background:linear-gradient(white,silver)
 }
 body {
-    background-color: plum;
+    background-color: darkcyan;
 }
 img {
    display: block;
    margin-left: auto;
    margin-right: auto;
    width: 20%;
+   padding: 10px;
 }
 p {
-    text-align: center;
-    padding: 20px 10px;
+    align-items: center;
+    padding: 5px 10pz;
     display: block;
-    font-size: 20px;
+    font-size: 16px;
+    border: 2px solid white;
+    text-align: center;
+    text-transform: uppercase;
 }
-p::first-letter {
+p:hover {
+    background-color: var(--backgroundColor);    
+    font-weight: bold; 
+}
+p::first-letter{
     color: white;
+}
+p::first-letter:hover{
+    color: red;
 }
 h1::selection {
     background-color: silver;
 }
 h2::selection {
-    background-color: yellow;
+    background-color: var(--someColor);
 }
 h3::selection {
     background-color: red;
@@ -62,4 +83,27 @@ h3::selection {
 p.intro::first-letter {
     color: orangered;
     font-size: 200%;
+}
+h5 {
+    padding: 20px 10px;
+    font-size: 24px;
+    color: aliceblue;
+    border: 5px seagreen solid;
+}
+h5:hover {
+color: black;
+background-color: var(--newColor);
+}
+button {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    margin-left: 800px;
+    background-color: var(--someColor);
+}
+img:hover {
+    animation: reverse;
+}
+@media screen and (max-width:900px){
+    
 }

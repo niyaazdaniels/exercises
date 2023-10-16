@@ -1,3 +1,10 @@
+/* custom properties */
+:root{
+  /* this is where we set the name of a specific color that we want */
+  --brownBarbie:  #91240d;
+  --whiteKent: #d77f0d;
+}
+
 .table,tr , th, td {
     border: 2px solid burlywood;
     margin: 0 auto; /*to center*/
@@ -99,3 +106,17 @@
     content: url(https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif);
     display: block;
   }
+  /* to reference attributes we have to put it in []  */
+  p[title]{
+    color:var(--whiteKent);
+    /* color: hsl(hue, saturation, lightness); */
+    /* color: hex; */
+    /* gradients */
+  }
+ /* media query*/
+ @media screen and (max-width:700px) {
+  body{
+    background-color: var(--brownBarbie);
+  }
+  
+ }
