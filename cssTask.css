@@ -27,51 +27,75 @@
     color: dimgrey;
   }
   /* siblings - they are either not in a container at all or are in the same container */
-  /* this is called an adjacent sibling */
+  /* this is called an adjacent sibling , directly next to*/
   aside + button { 
     color: cornflowerblue;
   }
+  /* highlighting - paragraph tag and sibling tag will be highlihgt if they are siblings of one another - general sibling selector */
   p ~ article {
     background-color: lightgray;
   }
+  /* Universal selector */
   * {
     font-family: verdana;
     font-weight: 800;
+
+    /* Psuedo Class - a selector that selects elements that are in a specific state - sort of style to add to an element i.e hover
+       Pseudo-classes that use single colon (:) in their notation.
+       Psuedo Element - used to style specified parts of an element 
+       Double colons (::) are used for pseudo-elements. 
+       */
   }
-  #hover:hover::after {
-    content: 'Hidden H3';
+  h3 {
+   /* content: 'Hidden H3'; */
     background-color: yellow;
     padding: 2rem;
+    display: none;
   }
+  /* selects to hover over h3 because we previously hide it, shows element when hovering over div*/
+  #hover:hover h3{
+    display: block;
+
+  }
+  /* a is the anchor tag, pseudo class active (:) to change the color for when we click on something*/
   a:active {
     color: purple;
   }
+  /* Select TR, psuedo class (:) first-child and this changes only the first tr, changes the color of all children elements*/
   tr:first-child {
-    background-color: yellowgreen;
+    color: yellowgreen;
   }
-  tr:hover td:first-child {
+  /* when hovering over the first td, it changes color to crimson */
+  tr td:first-child:hover {
     color: crimson;
   }
-  p > i:first-of-type {
+  /* select the p, i and because we want only the first, we'll use pseudo element to change the first one only */
+  p i:first-child {
     color: blue;
   }
-  p > i {
+  /* selects the first element and changing it all unlike the one above */
+  p:first-child i{
     color: peru;
   }
-  ::selection {
+  /* changes the highlight text color when highlighting a paragraph */
+  p::selection {
     background-color: greenyellow;
   }
+  /* psuedo element that only changes the first line of the paragraph to red */
   .paragraph::first-line {
     color: red;
   }
+  /* pseudo element that only changes the first letter in the paragraph */
   .paragraph::first-letter {
     color: blue;
   }
-  main::before {
+  /* pseudo element that inserts the image before the article */
+  article::before {
     content: url(https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif);
     display: block;
   }
-  main::after {
+  /* pseudo element that inserts the image after the article */
+  article::after {
     content: url(https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif);
     display: block;
   }
